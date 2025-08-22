@@ -6,3 +6,11 @@
   background-color: @fancy-color;
   font-family: @base-font;
 }
+
+@media (min-width: @tablet-width) {
+  .gift {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 264px;
+  }
+}

@@ -12,3 +12,30 @@
   background-color: #68b738;
   font-family: @accent-font;
 }
+
+@media (min-width: @tablet-width) {
+  .transfer__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-top: 84px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .transfer__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transfer__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
