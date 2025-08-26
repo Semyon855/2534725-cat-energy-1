@@ -1,5 +1,10 @@
 .transfer__subtitle {
-  background-color: @special-color;
+  color: @special-color;
+  font-family: @accent-font;
+}
+
+.transfer__headline {
+  color: @special-color;
   font-family: @accent-font;
 }
 
@@ -13,8 +18,13 @@
   font-family: @accent-font;
 }
 
+
+.transfer__list {
+  .list-reset();
+}
+
 @media (min-width: @tablet-width) {
-  .transfer__item {
+  .transfer__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -32,10 +42,19 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .transfer__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .transfer__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    padding-top: 80px;
   }
 }
