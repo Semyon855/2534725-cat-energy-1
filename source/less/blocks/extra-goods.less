@@ -1,8 +1,12 @@
 
-@media (min-width: @desktop-width) {
+.extra-goods {
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
   .extra-goods {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 81px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
