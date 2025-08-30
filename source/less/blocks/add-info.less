@@ -22,10 +22,18 @@
   .list-reset();
 }
 
+@media (min-width: @tablet-width) {
+  .add-info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .add-info__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 104px;
+    gap: 80px;
   }
 }

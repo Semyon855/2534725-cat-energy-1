@@ -1,3 +1,8 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .contacts__title {
   color: @side-color;
   font-family: @accent-font;
@@ -6,4 +11,12 @@
 .contacts__address {
   color: @back-color;
   font-family: @base-font;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
