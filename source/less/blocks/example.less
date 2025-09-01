@@ -21,8 +21,31 @@
 .example__cost {
   color: @side-color;
   font-family: @accent-font;
+  text-align: center;
+  display: block;
 }
 
 .example {
   background-color: #eaeaea;
+}
+
+.example__item {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .example {
+    display: flex;
+  }
 }

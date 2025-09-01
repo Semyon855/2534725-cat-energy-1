@@ -1,3 +1,14 @@
 .programs {
   background-color: rgba(242, 242, 242, 1);
 }
+
+.programs__list {
+  .list-reset();
+}
+
+@media (min-width: @desktop-width) {
+  .programs__list {
+    display: flex;
+    gap: 80px;
+  }
+}

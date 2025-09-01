@@ -7,3 +7,22 @@
   color: @back-color;
   font-family: @base-font;
 }
+
+.explanation__list {
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .explanation__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation__list {
+    display: flex;
+    gap: 88px;
+  }
+}

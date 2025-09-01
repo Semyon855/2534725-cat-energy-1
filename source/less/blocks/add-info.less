@@ -17,3 +17,23 @@
   color: @side-color;
   font-family: @base-font;
 }
+
+.add-info__list {
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .add-info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
+}

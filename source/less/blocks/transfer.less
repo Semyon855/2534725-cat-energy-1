@@ -1,14 +1,42 @@
 .transfer__subtitle {
-  background-color: @special-color;
+  color: @special-color;
+  font-family: @accent-font;
+}
+
+.transfer__headline {
+  color: @special-color;
   font-family: @accent-font;
 }
 
 .transfer__text {
-  background-color: @back-color;
+  color: @back-color;
   font-family: @base-font;
 }
 
 .transfer__button {
   background-color: #68b738;
   font-family: @accent-font;
+}
+
+
+.transfer__list {
+  .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .transfer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-top: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transfer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    padding-top: 80px;
+  }
 }
