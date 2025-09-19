@@ -2,6 +2,45 @@
   padding-bottom: 30px;
 }
 
+.program--slim {
+  background-image: url("../../img/mobile-cat-back.svg");
+  background-repeat: no-repeat;
+
+}
+
+@media (min-width: @tablet-width) {
+  .program--slim {
+    background-image: url("../../img/tablet-cat-back.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program--slim {
+    background-image: url("../../img/desktop-cat-back.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.program--fat {
+  background-image: url("../../img/mobile-cat-back.svg");
+  background-repeat: no-repeat;
+
+}
+
+@media (min-width: @tablet-width) {
+  .program--fat {
+    background-image: url("../../img/tablet-cat-back.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program--fat {
+    background-image: url("../../img/desktop-cat-back.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
 .program__second-title {
   color: @side-color;
   font-family: @accent-font;
@@ -16,4 +55,8 @@
   color: @side-color;
   font-family: @accent-font;
   column-gap: 200px;
+  padding-right: 50px;
+  background-image: url("");
+  background-position: right center;
+  background-repeat: no-repeat;
 }

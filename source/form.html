@@ -165,8 +165,14 @@
     <section class="contacts">
       <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" width="320" height="362" src="img/location.png"
-        alt="карта с значком логотипа cat energy">
+      <picture>
+        <source media="(min-width: 768px) and (max-width: 1439px)"
+                srcset="img/map-tablet.jpg">
+        <source media="(min-width: 1440px)"
+                srcset="img/map-desktop.jpg">
+        <img src="img/map-mobile.jpg"
+             alt="лого">
+     </picture>
     </section>
 
     <div class="main-footer__social-wrap">
