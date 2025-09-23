@@ -1,3 +1,9 @@
+.gift {
+  background-image: image-set(
+    url("../../img/surprise.svg")
+  );
+}
+
 .gift__background {
   background-color: rgba(104, 183, 56, 0.85);
 }
@@ -12,35 +18,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 264px;
-  }
-}
-
-.preview {
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: image-set(
-    url("../../img/cat-backpack.jpg")
-      1x,
-    url("../../img/cat-backpack@2x.jpg")
-      2x
-  );
-  background-repeat: no-repeat;
-}
-
-@media (min-width: @tablet-width) {
-  .preview {
-    background: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .preview {
-    background-color: rgba(104, 183, 56, 0.85);
-    background-image: image-set(
-    url("../../img/cat-backpack.jpg")
-      1x,
-    url("../../img/cat-backpack@2x.jpg")
-      2x
-  );
-    background-repeat: no-repeat;
   }
 }
