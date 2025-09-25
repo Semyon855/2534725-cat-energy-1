@@ -11,26 +11,23 @@
 
 
 .preview {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+   rgba(104, 183, 56, 0.85)) image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
   background-repeat: no-repeat;
 }
 
 
 @media (min-width: @tablet-width) {
   .preview {
-    background: none;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+   rgba(104, 183, 56, 0.85)) image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
   }
 }
 
 @media (min-width: @desktop-width) {
   .preview {
-    background-color: rgba(104, 183, 56, 0.85);
-    background-image: image-set(
-    url("../../img/background-cat-desktop.jpg")
-      1x,
-    url("../../img/background-cat-desktop@2x.jpg")
-      2x
-  );
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+   rgba(104, 183, 56, 0.85)) image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
     background-repeat: no-repeat;
   }
 }
