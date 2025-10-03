@@ -1,16 +1,23 @@
-.contacts {
+.contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  box-shadow: 5px 5px;
 }
 
 .contacts__title {
-  color: @side-color;
+  color: @accent-font;
   font-family: @accent-font;
+  text-transform: uppercase;
+  font-size: large;
 }
 
 .contacts__address {
   color: @back-color;
   font-family: @base-font;
+  font-size: small;
 }
 
 
@@ -29,4 +36,5 @@ picture {
 .contacts__map {
   grid-column: span 2;
   width: 100%;
+  object-fit: cover;
 }
